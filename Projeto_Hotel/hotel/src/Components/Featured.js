@@ -1,11 +1,11 @@
-import hotel1 from "../img/hotel1.jpg";
+import hotel1 from "../img/hotel2.jpg";
 
 const Featured = () => {
   return (
     <div>
-      <div className="container mx-auto px-4 py-10">
-        <div className="flex space-x-3">
-          <div className="space-y-3">
+      <div className="container xl:max-w-5xl mx-auto">
+        <div className="flex flex-col items-center xl:text-justify xl:gap-3 md:flex-row md:px-10 lg:py-10">
+          <div className="mt-5 px-2 space-y-2 mb-4">
             <p className="text-sm font-semibold text-gray-600">
               RESORT EM DESTAQUE
             </p>
@@ -49,7 +49,7 @@ const Featured = () => {
             </button>
           </div>
 
-          <div className="flex-shrink-0 ml-auto">
+          <div className="md:flex-shrink-0 md:h-full">
             <img width="450px" src={`${hotel1}`}></img>
           </div>
         </div>
